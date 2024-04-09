@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>О нашем парке</h2>
+<div>
+{% for line in file %}
+    <p>{{line}}</p>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Пополнение баланса</h2>
+<h3>Ваш баланс: {{balance}}</h3>
+<form method="POST" enctype=multipart/form-data>
+    <input class='chose-file' type="file" name="image" accept="image/*">
+    </br>
+    </br>
+    <input class="button button-pay" type="submit"/>
+</form>
+<h4>{{message}}</h4>
+<h3>Инструкция работы:</h3>
+<ul>
+    <li>Найти уникальную картинку, Загрузить и отправить</li>
+    <li>Баланс пополнится в зависимости от ценности картинки</li>
+    <li>Картинки не могут повторятся!</li>
+</ul>
+{% endblock content %}

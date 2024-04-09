@@ -1,0 +1,157 @@
+h2 {
+  color: #fca103;
+  font-family: 'Arial', 'Verdana', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 5px solid #fca103;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  height: 37px;
+  left:24%;
+  width: 800px;
+  background: #f2efe6;
+
+}
+
+.box {
+  border: 3px solid #fca103;
+  border-radius: 5px;
+}
+
+.attraction_div {
+  position: relative;
+  border: 5px solid #f2be91;#f2cf91
+  font-family: 'Arial', 'Verdana', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 1100px;
+  background: #d6d3c7;
+  height: 400px;
+  left: 3%;
+}
+
+.attraction_title {
+font-family: 'Monospace', 'Verdana', sans-serif;
+margin-left: 20px;
+font-size: 30px;
+}
+
+.margin_end {
+font-size: 21px;
+margin-bottom: 5px;
+margin-left: 45%;
+position: relative;
+top: -95%;
+}
+
+.button-pay {
+  background: white;
+}
+
+.button-pay:hover {
+  background: #71e37d;
+}
+
+.button-logout {
+  background: white;
+}
+
+.button-logout:hover {
+  background: #e37571;
+}
+
+.chose-file {
+  font-family: 'Monospace', 'Verdana', sans-serif;
+  position: sticky;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+position: sticky;
+font-family: 'Monospace', 'Verdana', sans-serif;
+font-size: 25px;
+margin-left: 10px;
+margin-bottom: 10px;
+}
+
+.top {
+  text-align: center;
+}
+
+body {
+  background-image: url('images/background.png');
+  background-size: 250px;
+  background-color: white;
+  -webkit-text-stroke: 1px #163563;
+  font-size: 20px;
+}
+
+.border {
+  margin-left: 20px;
+  border: 3px solid #fca103;
+  border-radius: 4px;
+  background: #dbd8d0;
+}
+
+.centre_text{
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 50px;
+  margin-left: 20px;
+  text-align: center;
+  font-family: 'Arial';
+  margin-left: 10px;
+}
+
+p {
+  font-family: 'Arial';
+  font-size: 20;
+  margin-left: 10px;
+}
+
+h3{
+  font-family: 'Arial';
+  margin-left: 10px;
+}
+
+h4{
+  font-family: 'Arial';
+  margin-left: 10px;
+}
+
+footer{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+a {
+display: inline-block;
+border: 5px solid #fca103;
+text-align: center;
+background: white;
+border-radius: 40px 20px;
+text-decoration: none;
+font-size: 30;
+color: black;
+}
+
+footer {
+  margin-left: 20px;
+  border: 3px solid #fca103;
+  text-align: center;
+  position: relative;
+  width: 40%;
+  height: 50px;
+  margin-bottom: 20px;
+  left: 30%;
+  padding: 0px 10px 10px;
+  border-radius: 10px;
+  background: #dbd8d0;
+}

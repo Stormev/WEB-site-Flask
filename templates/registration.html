@@ -1,0 +1,16 @@
+{% extends "base_auth.html" %}
+
+{% block content %}
+{% set a = '/login' %}
+<h3 class="alert alert-primary" role="alert" >Регистрация акаунта</h3>
+<div>
+    <form action="" method="POST">
+    <p><input class="field" type='text' id="login" name="login" placeholder="Введите желаемый логин"></p>
+    <p><input class="field" type='text' id="password" name="password" placeholder="Введите желаемый пароль"></p>
+    <p><input class="field_small" type='number' id="age" name="age" placeholder="Возраст", min="6", max="100"></p>
+    <p><input class="button-ok" type="submit" value="Зарегистрироваться"></p>
+</form>
+<h4>{{message}}</h4>
+</div>
+<h4 class="margin-l small-size margin-t">Уже есть акаунт? Нажмите <a href='/login'>Здесь</a> чтобы авторизоваться</h4>
+{% endblock content %}

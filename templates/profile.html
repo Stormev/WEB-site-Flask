@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Личный кабинет</h2>
+<h3>Добро пожаловать, {{user_name}}!</h3>
+<h3>Ваш баланс: {{balance}}</h3>
+</br>
+<h3>Ваши билеты на аттракционы:</h3>
+{% if tickets %}
+<ul>
+    <! ФОРМАТ СПИСКА БИЛЕТОВ ПО ПРИМЕРУ: [{'name': 'Машинки', 'count': 1, 'cost': 50}] -->
+    {% for item in tickets %}
+        <li>Билет на аттракцион: "{{item.name}}" -- количество: {{item.count}}, стоимость: {{item.cost}}</li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>У вас нет билетов, чтобы купить билет перейдите по ссылке: <a href="/attractions">Аттракционы</a></p>
+{% endif %}
+<form method="POST">
+    <input class='button button-logout' type="submit" name="out" value="Выйти из аккаунта">
+</form>
+{% endblock %}

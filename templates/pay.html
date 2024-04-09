@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Приобретение билета</h3>
+<h4>Вы выбрали {{choise}} </h4>
+<h4>Ваш баланс: {{balance}} | Билет стоит: {{cost}}</h4>
+{% if balance < cost %}
+<h4>К сожалению у вас недостаточно средств нажмите <a href="/replenish" >Здесь</a>, чтобы пополнить баланс</h4>
+{% else %}
+    <form action="" method="POST">
+        <input class="button button-pay" type="submit" value="Купить">
+    </form>
+{% endif %}
+{% endblock content%}

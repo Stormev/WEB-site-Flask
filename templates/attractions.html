@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Список доступных аттракционов </h2>
+<div>
+    <! ФОРМАТ ДАТЫ АТТРАКЦИОНОВ: -->
+    <! [{'id': 1, 'name': 'Машинки', 'image':'ссылка на картинку', 'cost':50, 'description': 'гы'}] -->
+    {% if attractions_data %}
+        {% for item in attractions_data %}
+            <div class="attraction_div">
+                <h3 class="attraction_title">{{item.name}}</h3>
+                <img src="{{url_for('static', filename= 'images/' + item.image_path )}}" alt="image", width="450", height="300">
+
+                {% set words = item.description.split('\n') %}
+                <h4 class="margin_end">О аттракционе: </h4>
+                <ul class="margin_end">
+                {% for item in words %}
+                    <li class="">{{item}}</li>
+                {% endfor %}
+                </ul>
+                <p class="margin_end">Стоимость билета: {{item.cost}}</p>
+                <form action="" method="POST" class="margin_end">
+                <input class="button button-pay" type="submit" name="{{item.id}}" value="Купить билет">
+                </form>
+            </div>
+        {% endfor %}
+    {% else %}
+    <h3>К нашему сожалению, нет доступных аттракционов =(</h3>
+    {% endif %}
+
+</div>
+
+{% endblock %}

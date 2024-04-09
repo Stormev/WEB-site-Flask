@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='design.css')}}">
+    <title>Парк Аттракционов</title>
+</head>
+<body>
+<header>
+    <h2 class="top"> Добро Пожаловать в Парк Атракционнов </h2>
+    <p></p>
+    <nav class="">
+        <a class="" href="/">О нашем парке</a>
+        <a class="" href="/profile">Личный кабинет</a>
+        <a class="" href="/attractions">Наши аттракционы</a>
+        <a class="" href="/replenish">Пополнить баланс</a>
+    </nav>
+</header>
+<!-- Begin page content -->
+<div id="content" class="border">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    <nav>
+        <p class="">Наша команда желает вам Приятного Времяпровождения!</p>
+    </nav>
+</footer>
+</body>
+</html>

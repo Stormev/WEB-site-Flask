@@ -1,0 +1,45 @@
+.margin-l {
+  margin-left: 20px;
+}
+
+body {
+   font-size: 22px;
+}
+
+div {
+  border: 5px solid #6f9df7;
+  background: #cedaf5;
+  padding: 20px 5px 10px;
+  position: relative;
+  width: 40%;
+}
+
+.button-ok {
+  background: white;
+}
+
+.button-ok:hover {
+  background: #71e37d;
+}
+
+.margin-t{
+  margin-top: 40px;
+}
+
+p{
+  margin-left: 20px;
+}
+
+.small-size {
+  font-size: 17px;
+}
+
+.field {
+  position: relative;
+  width: 50%;
+}
+
+.field_small {
+  position: relative;
+  width: 25%;
+}
